@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script>
+      axios
+        .get(
+          "https://api.open-meteo.com/v1/forecast?latitude=30.044420&longitude=31.235712&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
+        )
+        .then((response) => {
+          let data = response.data.current;
+          document.querySelector(
+            "h1"
+          ).innerHTML += `Temperature: ${data.temperature_2m} &#8451;`;
+          document.querySelector(
+            "h1"
+          ).innerHTML += `<hr><br/>Wind Speed: ${data.wind_speed_10m} km/h`;
+          document.querySelector(
+            "h1"
+          ).innerHTML += `<hr><br/>Time Now: ${data.time}`;
+        });
+    </script>
+  </body>
+</html>

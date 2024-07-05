@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مواقيت الصلاه</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="direction: rtl">
+    
+    <div class="container">
+      <div class="header">
+            <a href="../index.html"><button>back</button></a>
+
+        <h1 style="font-size: 50px" id="ctr"> Cairo</h1>
+        <p style="font-size: 15px"></p>
+        <h2 style="font-size: 20px"></h2>
+      </div>
+      <div id="time-table">
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه الفجر</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="fajr"></h1>
+          </div>
+        </div>
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه الضحي</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="doha"></h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه الظهر</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="dohr"></h1>
+          </div>
+        </div>
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه العصر</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="asr"></h1>
+          </div>
+        </div>
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه المغرب</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="maghrib"></h1>
+          </div>
+        </div>
+        <div class="item">
+          <div class="xxx">
+            <span>صلاه العشاء</span>
+          </div>
+
+          <div class="items">
+            <h1 style="font-weight: bold; font-size: 50px;" id="isha"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <select
+          class="w-40 h-14 p-3 text-xl rounded-full shadow-white shadow-md bg-slate-500"
+          name=""
+          id="select"
+        >
+          <option selected="select" value="Cairo">القاهره</option>
+          <option value="luxor">الاقصر</option>
+          <option value="Alexandria	">الاسكندريه</option>
+          <option value="Aswan">اسوان</option>
+        </select>
+      </div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

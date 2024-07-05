@@ -1,0 +1,81 @@
+body {
+  background-image: url(../bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 1fr;
+  gap: 20px;
+  color: white;
+}
+.header {
+  padding-right: 20px;
+  border-bottom: 1px solid white;
+}
+#time-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 1px 1px 10px;
+  color: black;
+  text-align: center;
+
+  div {
+    height: 50px;
+    width: 100%;
+    font-size: 28px;
+  }
+  .items {
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 200px;
+}
+@media (max-width: 860px) {
+  #time-table {
+    flex-direction: column;
+  }
+}
+.xxx {
+  background-image: linear-gradient(45deg, #5709ee, #7a37bf);
+  color: white;
+}
+
+button {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  background: none;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 14px 35px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+button:hover {
+  background: #fff;
+  color: #94009c;
+}
